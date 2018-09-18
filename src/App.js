@@ -2,6 +2,7 @@ import React from 'react';
 import generateId from './components/generateId.js';
 import Homepage from './components/Homepage.js';
 
+
 class HomepageContainer extends React.Component {
     constructor(props){
         super(props);
@@ -11,7 +12,7 @@ class HomepageContainer extends React.Component {
     }
     componentDidMount() {
         let retrievePosts = () =>
-            fetch(`http://0.tcp.ngrok.io:10766/wassups.json`)
+            fetch(`http://0.tcp.ngrok.io:11140/wassups.json`)
                 .then(response =>{
                     return response.json()})
                     .then(data =>{
